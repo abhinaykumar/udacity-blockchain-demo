@@ -11,7 +11,6 @@ contract SampleToken is ERC20 {
     }
 
     function decimals() public view virtual override returns (uint8) {
-        // the default decimals in openzeppeline in 18
         return decimalnumber;
     }
 }

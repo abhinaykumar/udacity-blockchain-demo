@@ -37,6 +37,7 @@ it("can change ownership", async () => {
   assert.equal(await instance.starOwner.call(), owner);
 
   await instance.claimStar({ from: secondOwner });
+  // function call() is free and do not cost to read the value from the ETH blockchain
   assert.equal(await instance.starOwner.call(), secondOwner);
 });
 
